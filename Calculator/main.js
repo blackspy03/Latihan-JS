@@ -31,13 +31,14 @@ for (let i = 0; i < buttonValues.length; i++) {
     }
 
     if (rightSymbols.includes(value)) {
-        button.style.backgroundColor = "#FFA500"; // Orange for right symbols
+        button.style.backgroundColor = "#FFA500";
     } else if (topSymbols.includes(value)) {
-        button.style.backgroundColor = "#9F9F9F"; // Light gray for top symbols
+        button.style.backgroundColor = "#9F9F9F";
     }
 
     //add event to button
     button.addEventListener("click", function () {
+        // if untuk pengelompokan button
         if (rightSymbols.includes(value)) {
             if (value == "=") {
                 if (A != null) {
